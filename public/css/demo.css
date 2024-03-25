@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
   }
   
@@ -6,11 +6,15 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+  p{
+    margin-left: 2vw;
+    padding-left:20vw
+  }
   
-  /* Style the side navigation */
+  /* Style the side navigation for chat application*/
   .sidenav {
     height: 100%;
-    width: 200px;
+    width: 20vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -24,6 +28,7 @@
   .inbox__people{
       color: white;
       padding: 16px;
+      font-size: 2vw;
   }
   
   
@@ -33,10 +38,10 @@
     padding: 16px;
     text-decoration: none;
     display: block;
+    font-size: 2vw;
+    
   }
 
-
-  
   /* Change color on hover */
   .sidenav a:hover {
     background-color: #ddd;
@@ -45,6 +50,7 @@
   
   /* Style the content */
   .content {
-    margin-left: 200px;
-    padding-left: 20px;
+    margin-left: 2vw;
+    padding-left: 20vw;
   }
+
