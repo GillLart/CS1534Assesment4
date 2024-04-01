@@ -7,19 +7,20 @@ const inboxPeople = document.querySelector(".inbox__people");
 
 let userName = "";
 let id;
+
 const newUserConnected = function (data) {
     
 
     //give the user a random unique id
     id = Math.floor(Math.random() * 1000000);
     userName = 'user-' +id;
-    //console.log(typeof(userName));   
-    
-
     //emit an event with the user id
     socket.emit("new user", userName);
     //call
     addToUsersBox(userName);
+
+    displayNotif(`${userName} has joined.`);
+
 };
 
 const addToUsersBox = function (userName) {
@@ -37,10 +38,35 @@ const addToUsersBox = function (userName) {
     <div class="chat_id ${userName}-userlist">
       <h5>${userName}</h5>
     </div>
+
   `;
+
     //set the inboxPeople div with the value of userbox
     inboxPeople.innerHTML += userBox;
 };
+
+const displayNotif = function (message){
+  const notification = document.createElement('div');
+  notification.classList.add('notification');
+  notification.textContent = message;
+    // Get the div containing the navbar class
+  const navbarDiv = document.querySelector(".navbar");
+  const messageForm = document.querySelector(".message_form");
+  const notificationsContainer = document.querySelector('.notifications');
+
+  // Append the notification next to the form element and under the navbar div
+  navbarDiv.parentNode.insertBefore(notification, navbarDiv.nextSibling);
+  messageForm.parentNode.insertBefore(notification, messageForm.nextSibling);
+  document.body.after(notification);
+
+  setTimeout(() =>{
+    notification.style.backgroundColor = "#cecdcd";
+  }, 200); //changes the colour of the notif after 0.2 sec so the newest message is highlighted
+  setTimeout(() =>{
+    notification.remove();
+  }, 3000); //removes notif after 3sec
+};
+
 
 //call 
 newUserConnected();
@@ -48,12 +74,13 @@ newUserConnected();
 //when a new user event is detected
 socket.on("new user", function (data) {
   data.map(function (user) {
-          return addToUsersBox(user);
-      });
+    return addToUsersBox(user);
+   });
 });
 
 //when a user leaves
 socket.on("user disconnected", function (userName) {
+  displayNotif(`${userName} has left.`);
   document.querySelector(`.${userName}-userlist`).remove();
 });
 
@@ -90,6 +117,15 @@ const addNewMessage = ({ user, message }) => {
   //is the message sent or received
   messageBox.innerHTML += user === userName ? myMsg : receivedMsg;
 };
+
+// Event listener for input field to detect typing
+inputField.addEventListener("input", () => {
+    if (inputField.value) {
+        // display HTML notification for user typing
+        displayNotif(`${userName} is typing`);
+
+    } 
+});
 
 messageForm.addEventListener("submit", (e) => {
   e.preventDefault();

@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- need notifs for user typing, joining and leaving-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Socket.io simple chat</title>
     <link rel="stylesheet" href="/css/demo.css" />
   </head>
+  
   <body>
-    <p>Chat page</p>
+    <div class="navbar">
+      <a href = "index.html">Home</a>
+      <a class = "active" href = "chat.html">Chat</a>
+      <a href = "about.html">About</a>
+    </div>
+
     <div class="sidenav">
       <a href = "index.html">Home</a>
       <a class = "active" href = "chat.html">Chat</a>
       <a href = "about.html">About</a>
         <div class="inbox__people">
-          <h4>Active users</h4>
+          <h4>Active users</h4> 
         </div>
-
     </div>
-      
-      
+
       <br>
-      <hr>
-      <div class="content">
-        <div class="messages__history"></div>
-          <div class="fallback"></div>
-        <div class="inbox__messages">
+      <div class="container">
+        <div class="content">
+          <div class="messages__history"></div>
+          <div class="inbox__messages">
+            <form class="message_form">
+              <input type="text" class="message_form__input" placeholder="Type a message" />
+              <button class="message_form__button" type="submit">
+                Enter
+              </button>
+            </form>
             
+          </div>
+          <div class="fallback"></div>
           
         </div>
-
-        <form class="message_form">
-            <input type="text" class="message_form__input" placeholder="Type a message" />
-            <button class="message_form__button" type="submit">
-              Enter
-            </button>
-          </form>
       </div>
+
+    
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/client.js"></script>

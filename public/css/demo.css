@@ -1,39 +1,27 @@
 *{
-    box-sizing: border-box;
+   /* box-sizing: border-box;*/
+
   }
   
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
-  p{
-    margin-left: 2vw;
-    padding-left:20vw
-  }
-  
   /* Style the side navigation for chat application*/
   .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 20vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    flex-shrink:0;
+    position: sticky;
+    display:block;
     background-color: #111;
     overflow-x: hidden;
-  }
 
-  /*make the active user text inherit style from container*/
-
-  .inbox__people{
-      color: white;
-      padding: 16px;
-      font-size: 2vw;
   }
-  
-  
+    
   /* Side navigation links */
   .sidenav a {
+
     color: white;
     padding: 16px;
     text-decoration: none;
@@ -45,12 +33,76 @@
   /* Change color on hover */
   .sidenav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #111;
   }
   
+
   /* Style the content */
-  .content {
-    margin-left: 2vw;
-    padding-left: 20vw;
+  /* Style the navigation menu */
+  .navbar {
+    position: sticky;
+    width: 100%;
+    background-color: #111;
+    overflow: auto;
   }
 
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 0.5vw;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: #bdbdbd;
+    color: #111;
+  }
+
+  /* Style the current/active link */
+  .navbar a.active {
+    background-color: #ddd;
+    color: #111;
+  }
+  .container {
+   font-size: 2vw;
+   position: absolute;
+   top: 0; /* Align to the top */
+   left: 20vw; /* Align to the right edge of the sidenav */
+   bottom: 0; /* Take up remaining vertical space */
+   right: 0; /* Align to the right side of the viewport */
+   margin-top:4vw;
+   margin-left: 4vw;
+   overflow-y: auto; /* Allow scrolling if content overflows vertically */
+  }
+
+  /*make the active user text inherit style from container*/
+
+  .inbox__people{
+    color: white;
+    padding: 16px ;
+  }
+  
+  .inbox__messages {
+   display: flex;
+   align-items: center;
+  }
+
+ .notification {
+   position: fixed;
+   top: 0; /* Align to the top */
+   margin-top:4vw;
+    width:20vw;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 0.2vh solid #111;
+    color: #111;
+    margin-left: 70vw;
+    text-align: center;
+    overflow-y: auto; 
+  }
