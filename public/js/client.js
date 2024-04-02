@@ -57,14 +57,14 @@ const displayNotif = function (message){
   // Append the notification next to the form element and under the navbar div
   navbarDiv.parentNode.insertBefore(notification, navbarDiv.nextSibling);
   messageForm.parentNode.insertBefore(notification, messageForm.nextSibling);
-  document.body.after(notification);
+  document.body.before(notification);
 
   setTimeout(() =>{
     notification.style.backgroundColor = "#cecdcd";
-  }, 200); //changes the colour of the notif after 0.2 sec so the newest message is highlighted
+  }, 1000); //changes the colour of the notif after 0.2 sec so the newest message is highlighted
   setTimeout(() =>{
     notification.remove();
-  }, 3000); //removes notif after 3sec
+  }, 1500); //removes notif after 3sec
 };
 
 

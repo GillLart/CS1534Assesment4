@@ -10,24 +10,23 @@
   /* Style the side navigation for chat application*/
   .sidenav {
     height: 100vh;
-    width: 20vw;
-    flex-shrink:0;
-    position: sticky;
-    display:block;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: #111;
     overflow-x: hidden;
-
+    position: sticky;
   }
     
   /* Side navigation links */
   .sidenav a {
-
     color: white;
     padding: 16px;
     text-decoration: none;
     display: block;
     font-size: 2vw;
-    
   }
 
   /* Change color on hover */
@@ -35,7 +34,20 @@
     background-color: #ddd;
     color: #111;
   }
+
+  .sidenav li a{
+    font-size: 1.5vw;
+  }
   
+  .rightSidenav {
+    position: fixed;
+    height:100vh;
+    width: 20%;
+    top:0;
+    right:0;
+    background-color: #111;
+    overflow-x: hidden; 
+  }
 
   /* Style the content */
   /* Style the navigation menu */
@@ -49,11 +61,12 @@
   /* Navigation links */
   .navbar a {
     float: left;
-    padding: 0.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
     color: white;
     text-decoration: none;
     font-size: 2vw;
-    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
 
@@ -96,13 +109,14 @@
    position: fixed;
    top: 0; /* Align to the top */
    margin-top:4vw;
-    width:20vw;
+    width:15vw;
     background-color: #f2f2f2;
     padding: 20px;
     margin-bottom: 15px;
     border: 0.2vh solid #111;
     color: #111;
-    margin-left: 70vw;
+    margin-left: 50vw;
     text-align: center;
     overflow-y: auto; 
+    font-size: 1.5vw;
   }
