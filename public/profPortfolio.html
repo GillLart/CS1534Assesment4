@@ -1,45 +1,3 @@
-<!-- --content--
-for computing work--
-
---focus on most recent projects which are--
-  --adv higher project--
-  include playable video 
-  include shot descriptions 
-  inculde shortened documentation 
-
-  --oop project--
-  include playable video
-  include shot descriptions 
-  inculde shortened documentation 
-
-  --programming (basic platformer desktop application)) project--
-  include playable video
-  include shot descriptions 
-  inculde shortened documentation 
-
-for art portfolio section--
---expressive work--
-  --studies--
-  qualifications/courses:
-  DRAWING & PAINTING THE FIGURE with GINNY ELSTON 5 SEP - 5 DEC 2022 leith school of art
-  Life drawing for teens with Helen Jackson at The Edinburgh Drawing School
-  --examples of studies--
-  life
-  landscape
-  still life
-
-  --expressive --
-  life
-  landscape
-
-  --design--
-  character 
-  interior 
-  landscape
-
-etc...-->
-
-
   <!DOCTYPE html>
 
 <html lang="en">
@@ -52,6 +10,7 @@ etc...-->
         <link rel="stylesheet" href="css/demo.css">
     </head>
     <body>
+      <!--adding a nav bar that is consistent throughout website-->
       <div class="navbar">
         <a href = "index.html">Home</a>
         <a href = "about.html">About</a>
@@ -60,28 +19,51 @@ etc...-->
         <a href = "chat.html">Chat</a>
       </div>
 
+      <!--adding a sidebar that is consistent throughout website(excluding home page)-->
       <div class="sidenav">
+        <!--adding a link to small portfolio of my favorite computing prohject-->
         <a href="#comp">Computing Portfolio</a>
         <li><a href = "#decorGame">House Decorator Game</a></li>
-        <li><a href = "#oopProj">Object Orientated Project</a></li>
-        <li><a href = "#platformer">Platformer Game</a></li>
+
+        <!--adding a seprate section for the art portfolio-->
         <a href="#art">Art Portfolio</a>
-        <li><a href = "#studies">Studies</a></li>
+        <li><a href = "#studies">Artistic Studies</a></li>
         <li><a href = "#express">Expressive work</a></li>
         <li><a href = "#des">Design work</a></li>
       </div>
 
+
       <div class="container">
         <h3 id="comp">Computing Portfolio</h3>
         <h3 id="decorGame">House Decorator Game</h3>
-        <h3 id="oopProj">Object Orientated Project</h3>
-        <h3 id="platformer">Platformer Game</h3>
+        <p>Description of project:<br>My project will be a Software Design and Development project with Database Design and Development implementation. And will allow you to decorate a house that will then be judged.  The computer game requires players to sign in (or create a login which will then be saved to a table in a database as a new player) using their username and password.<br>see video of project below:<p>
+        <video controls>
+          <source src="House Decorator Gillan Lartey.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
         <h3 id="art">Art Portfolio</h3>
-        <h3 id="studies">Studies</h3>
-        <h3 id="express">Expressive work</h3>
-        <h3 id="des">Design work</h3>
-      </div>
+        <h3 id="studies">Artistic Studies</h3>
+        <!--overview of my art studies-->
+        <p>
+           Boroughmuir Highschool<br>
+           2023<br>
+           Advanced Higher Art -A<br><br>
+           Leith School of Art<br>
+           5 sep - 5 dec 2022<br>
+           Drawing & Painting The Figure with Ginny Elston.<br><br>
+           The Edinburgh Drawing School<br>
+           2019-2020<br>
+           Life drawing for teens with Helen Jackson 
+        </p>
 
+        <h3 id="express">Expressive work</h3>
+        <!--i used the website html5 to utalise an iframe to display a flipable book of my design work-->
+        <iframe style="width:60vw;height:70vh" src="https://online.fliphtml5.com/yflzf/nvuh/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+        <h3 id="des">Design work</h3>
+        <!--i used the website html5 to utalise an iframe to display a flipable book of my design work-->
+        <iframe style="width:60vw;height:70vh" src="https://online.fliphtml5.com/yflzf/ipns/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+        
+      </div>
       
         
       <script src="js/client.js" async defer></script>

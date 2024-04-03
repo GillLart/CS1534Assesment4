@@ -6,24 +6,84 @@
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2ac5b;
+    height:100vh;
   }
+
+  main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #d29030;
+  }
+
+  video{
+    width:40vw;
+    height:50vh;
+  }
+
+  .bg-O{
+    position: absolute;
+    width:2800px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bg-suns{
+    position: absolute;
+    top:53%;
+    left:50%;
+    width:70vw;
+    height:50vw;
+    transform: translate(-50%, -50%);
+  }
+  .bg-Rock{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mg-Rock{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fg-Rock{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+
   /* Style the side navigation for chat application*/
   .sidenav {
+    position: absolute;
+    margin-top: 3vw;
     height: 100vh;
-    width: 20%;
-    position: fixed;
+    width: 20vw;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #783508;
     overflow-x: hidden;
-    position: sticky;
   }
     
   /* Side navigation links */
   .sidenav a {
     color: white;
-    padding: 16px;
+    padding: 1.5vw;
     text-decoration: none;
     display: block;
     font-size: 2vw;
@@ -32,29 +92,20 @@
   /* Change color on hover */
   .sidenav a:hover {
     background-color: #ddd;
-    color: #111;
+    color: #783508;
   }
 
   .sidenav li a{
     font-size: 1.5vw;
   }
-  
-  .rightSidenav {
-    position: fixed;
-    height:100vh;
-    width: 20%;
-    top:0;
-    right:0;
-    background-color: #111;
-    overflow-x: hidden; 
-  }
 
   /* Style the content */
   /* Style the navigation menu */
   .navbar {
-    position: sticky;
-    width: 100%;
-    background-color: #111;
+    position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    background-color: #783508;
     overflow: auto;
   }
 
@@ -66,20 +117,20 @@
     color: white;
     text-decoration: none;
     font-size: 2vw;
-    width: 20%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 20vw; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
 
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color: #bdbdbd;
-    color: #111;
+    background-color: #bf8834;
+    color: #783508;
   }
 
   /* Style the current/active link */
   .navbar a.active {
-    background-color: #ddd;
-    color: #111;
+    background-color: #e2ac5b;
+    color: #783508;
   }
   .container {
    font-size: 2vw;
@@ -93,27 +144,38 @@
    overflow-y: auto; /* Allow scrolling if content overflows vertically */
    text-align: center;
   }
-  .title{
-    left: 0vw;
-    font-size:5vw;
-    top: 0; /* Align to the top */
-    left: 0vw; /* Align to the right edge of the sidenav */
-    bottom: 0; /* Take up remaining vertical space */
-    right: 0; /* Align to the right side of the viewport */
-    margin-left: ;
-    overflow-y: auto; /* Allow scrolling if content overflows vertically */
-    text-align: center;
 
+  .container p{
+    color: #783508;
+    text-align: center;
+    padding-right: 3vw;
+    padding-left: 3vw;
+
+  }
+  .title h1{
+    padding-top: 10vw;
+    color: #783508;
+    text-decoration: none;
+    font-size: 4vw;
+    text-align:center;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  img {
+    width:100vw;
+    height:100vh;
   }
   .subtitles h3{
     float: left;
-    padding-top: 0.5vw;
     padding-bottom: 0.5vw;
-    color: black;
+    color: #e2ac5b;
     text-decoration: none;
     font-size: 2vw;
-    width: 25%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align:center;
+    width: 25%; /* Five equal-width links. */
+    transform: translate(0, -50%);
   }
   
   .subtitles  {
@@ -124,11 +186,12 @@
   .subtitles p {
     padding-left: 0.5vw;
     padding-right: 0.5vw;
-    color: black;
+    color: #e2ac5b;
     text-decoration: none;
     font-size: 1vw;
     width: 25%; /* Five equal-width links.*/
     text-align: center;
+    transform: translate(0, -50%);
   }
 
   /*make the active user text inherit style from container*/

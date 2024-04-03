@@ -1,6 +1,3 @@
-still to include(notes for myself): 
-technical details of the chat's client-server
-add comments to all html, css, and possibly javasript
 
  !!NOTE!!: for this web application to run you must enter the commands:
   cd CA4 and then the command node index.js in the terminal.
@@ -36,6 +33,7 @@ develop a website that functions a personal and professional portfolio and inclu
   The text on the home page must describe the function of each page in the website 
   All Images must be visible
   On smaller view ports the text (i.e. mobile, tablet etc..), images an navigation bar mush adjust to fit the view port
+  display flip books of my artwork and a video of my computing project
 
   Challenges faced:
   integrating the notifications into the current 
@@ -71,10 +69,11 @@ were the things discussed in the design staged achieved?
   and professional portfolio as it contains details on the clients 
   personal and professional interests, projects, and general details. 
   And it remains responsive and eye catching throughout due to its use 
-  of vw (making elements relevant to the width of the viewport)and its cohesive
+  of vw and %(making elements relevant to the width of the viewport)and its cohesive
   colour scheme and interesting images. If i were to do this again a main change I 
   would make is to include a login/ sign up feature for users to use the chat feature.
 
   Sources:
   chat application by Traversy media- https://www.youtube.com/watch?v=jD7FnbI76Hg
   chat application by Sabe- https://sabe.io/tutorials/how-to-build-real-time-chat-app-node-express-socket-io
+  for flip book:https://fliphtml5.com/
