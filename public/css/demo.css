@@ -176,12 +176,14 @@
     font-size: 2vw;
     width: 25%; /* Five equal-width links. */
     transform: translate(0, -50%);
+    text-align: center;
   }
   
   .subtitles  {
     width:100vw;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   .subtitles p {
     padding-left: 0.5vw;
@@ -192,6 +194,7 @@
     width: 25%; /* Five equal-width links.*/
     text-align: center;
     transform: translate(0, -50%);
+    text-align: center;
   }
 
   /*make the active user text inherit style from container*/
