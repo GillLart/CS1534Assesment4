@@ -1,10 +1,12 @@
-still to include: technical details of the chat's client-server
+still to include(notes for myself): 
+technical details of the chat's client-server
+add comments to all html, css, and possibly javasript
 
  !!NOTE!!: for this web application to run you must enter the commands:
   cd CA4 and then the command node index.js in the terminal.
-  Also a flaw I encountered the mp4 file for my coding project 
+  Also a flaw I encountered: the mp4 file I use for my coding project 
   is to big to upload to github so it is untracked but still important.
-  If i were to do this project again i would make sure I had smaller videos to upload
+  If I were to do this project again I would make sure I had smaller videos to upload
   beforehand.
 
 Design discussion:
@@ -40,6 +42,7 @@ develop a website that functions a personal and professional portfolio and inclu
   code for the chat application. I researched 
   for similar projects and found a chat application by Traversy
   Media that greatly helped me understand the Java Script code more. 
+  I also found another chat application using socket.io on a website called Sabe.
   I also looked at past lectures from this course and used my 
   own problem solving skills to overcome this challenge
 
@@ -69,7 +72,9 @@ were the things discussed in the design staged achieved?
   personal and professional interests, projects, and general details. 
   And it remains responsive and eye catching throughout due to its use 
   of vw (making elements relevant to the width of the viewport)and its cohesive
-  colour scheme and interesting images
+  colour scheme and interesting images. If i were to do this again a main change I 
+  would make is to include a login/ sign up feature for users to use the chat feature.
 
   Sources:
   chat application by Traversy media- https://www.youtube.com/watch?v=jD7FnbI76Hg
+  chat application by Sabe- https://sabe.io/tutorials/how-to-build-real-time-chat-app-node-express-socket-io

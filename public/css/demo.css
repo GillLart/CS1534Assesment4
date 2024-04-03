@@ -66,7 +66,7 @@
     color: white;
     text-decoration: none;
     font-size: 2vw;
-    width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 20%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
 
@@ -89,8 +89,46 @@
    bottom: 0; /* Take up remaining vertical space */
    right: 0; /* Align to the right side of the viewport */
    margin-top:4vw;
-   margin-left: 4vw;
+   margin-left: ;
    overflow-y: auto; /* Allow scrolling if content overflows vertically */
+   text-align: center;
+  }
+  .title{
+    left: 0vw;
+    font-size:5vw;
+    top: 0; /* Align to the top */
+    left: 0vw; /* Align to the right edge of the sidenav */
+    bottom: 0; /* Take up remaining vertical space */
+    right: 0; /* Align to the right side of the viewport */
+    margin-left: ;
+    overflow-y: auto; /* Allow scrolling if content overflows vertically */
+    text-align: center;
+
+  }
+  .subtitles h3{
+    float: left;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    color: black;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 25%; /* Five equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align:center;
+  }
+  
+  .subtitles  {
+    width:100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .subtitles p {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+    width: 25%; /* Five equal-width links.*/
+    text-align: center;
   }
 
   /*make the active user text inherit style from container*/
@@ -98,6 +136,7 @@
   .inbox__people{
     color: white;
     padding: 16px ;
+    
   }
   
   .inbox__messages {
@@ -106,17 +145,23 @@
   }
 
  .notification {
-   position: fixed;
-   top: 0; /* Align to the top */
-   margin-top:4vw;
+    position: fixed;
+    top: 0; /* Align to the top */
+    margin-top:4vw;
     width:15vw;
     background-color: #f2f2f2;
     padding: 20px;
     margin-bottom: 15px;
     border: 0.2vh solid #111;
     color: #111;
-    margin-left: 50vw;
+    margin-left: 75vw;
     text-align: center;
     overflow-y: auto; 
     font-size: 1.5vw;
   }
+ .message_form{
+  position: fixed;
+  top: 0;
+  padding-left:5vw;
+  margin-top:4vw;
+ }

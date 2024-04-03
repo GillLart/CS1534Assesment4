@@ -9,8 +9,6 @@
   </head>
   
   <body>
-    <div class="rightSidenav">
-    </div>
     <div class="navbar">
       <a href = "index.html">Home</a>
       <a href = "about.html">About</a>
@@ -32,7 +30,7 @@
           <div class="messages__history"></div>
           <div class="inbox__messages">
             <form class="message_form">
-              <input type="text" class="message_form__input" placeholder="Type a message" />
+              <input type="text" class="message_form__input" placeholder="Type a message" maxlength="40" required/><!--has input validation: text is required to be entred (ie no one can entre a blenk message & the message cant exeed 40 characters)-->
               <button class="message_form__button" type="submit">
                 Enter
               </button>

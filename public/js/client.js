@@ -98,7 +98,7 @@ const addNewMessage = ({ user, message }) => {
     <div class="received__message">
       <p>${message}</p>
       <div class="message__info">
-        <span class="message__author">${user}</span>
+        <span class="message__author">${user} at:</span>
         <span class="time_date">${formattedTime}</span>
       </div>
     </div>
@@ -109,6 +109,7 @@ const addNewMessage = ({ user, message }) => {
     <div class="sent__message">
       <p>${message}</p>
       <div class="message__info">
+        <span class="message__author">You at:</span>
         <span class="time_date">${formattedTime}</span>
       </div>
     </div>
